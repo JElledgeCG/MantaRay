@@ -11,9 +11,9 @@ void RenderApplication::init(int width, int height, const char* name) {
 
 void RenderApplication::run() {
 	// Create GLFW Window
-
 	window.init(config);
 	// Initialize graphics engine/vulkan
+	renderer.init();
 	// Main Render Loop
 	mainLoop();
 	// Cleanup

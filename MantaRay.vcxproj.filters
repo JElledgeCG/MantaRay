@@ -21,6 +21,9 @@
     <ClCompile Include="src\application\window.cpp">
       <Filter>MantaRay\Application</Filter>
     </ClCompile>
+    <ClCompile Include="src\application\renderer.cpp">
+      <Filter>MantaRay\Graphics</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\application\application.h">
@@ -28,6 +31,9 @@
     </ClInclude>
     <ClInclude Include="src\application\window.h">
       <Filter>MantaRay\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="src\application\renderer.h">
+      <Filter>MantaRay\Graphics</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
