@@ -5,14 +5,17 @@
 
 class Renderer {
 private:
-
-	VkInstance instance;
 	VkDebugUtilsMessengerEXT debugMessenger;
 
 	void createInstance();
 	void setupDebugMessenger();
 public:
+
+	VkInstance instance;
+	VkSurfaceKHR surface;
+
 	void init();
+	void setupPipeline();
 	//void render(/* Geometry goes here */);
 	void cleanupRenderer();
 };

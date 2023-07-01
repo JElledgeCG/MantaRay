@@ -14,10 +14,12 @@ struct WindowConfig {
 
 class Window {
 private:
-	GLFWwindow* window;
 	WindowConfig properties;
 
 public:
+
+	GLFWwindow* window;
+
 	void init(WindowConfig config);
 	void windowCleanup();
 	GLFWwindow* windowPtr();

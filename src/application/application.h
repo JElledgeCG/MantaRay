@@ -13,6 +13,8 @@ private:
 	Window window;
 	Renderer renderer;
 
+	void createSurface();
+
 public:
 	void init(int width, int height, const char* name);
 	void run();

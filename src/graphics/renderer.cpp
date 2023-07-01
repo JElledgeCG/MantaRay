@@ -2,8 +2,16 @@
 
 #include <stdexcept>
 
+
 void Renderer::init() {
 	createInstance();
+    setupDebugMessenger();
+}
+// Application needed an instance to setup surface, rest of graphics pipeline needs a surface to setup. Splitting
+// init stuff to fix this. In the future I'd like to structure a bit better to avoid stuff like this but where I'm at right now
+// I don't have the best fix, so this will do. - JE 7/1/23
+void Renderer::setupPipeline() {
+    
 }
 
 // Create a vulkan instance
@@ -65,6 +73,8 @@ void Renderer::cleanupRenderer() {
     if (enableValidationLayers) {
         DestroyDebugUtilsMessengerEXT(instance, debugMessenger, nullptr);
     }
+
+    vkDestroySurfaceKHR(instance, surface, nullptr);
 
     vkDestroyInstance(instance, nullptr);
 }
