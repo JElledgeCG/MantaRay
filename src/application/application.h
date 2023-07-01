@@ -2,13 +2,17 @@
 #define APPLICATION_H
 
 #include "window.h"
-#include "renderer.h"
+
+#include "../graphics/renderer.h"
+
+#include <vector>
 
 class RenderApplication {
 private:
 	WindowConfig config;
 	Window window;
 	Renderer renderer;
+
 public:
 	void init(int width, int height, const char* name);
 	void run();

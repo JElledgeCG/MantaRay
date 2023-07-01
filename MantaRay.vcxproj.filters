@@ -15,25 +15,31 @@
     <ClCompile Include="src\main.cpp">
       <Filter>MantaRay</Filter>
     </ClCompile>
-    <ClCompile Include="src\application\application.cpp">
-      <Filter>MantaRay\Application</Filter>
-    </ClCompile>
     <ClCompile Include="src\application\window.cpp">
       <Filter>MantaRay\Application</Filter>
     </ClCompile>
-    <ClCompile Include="src\application\renderer.cpp">
+    <ClCompile Include="src\graphics\renderer.cpp">
+      <Filter>MantaRay\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\application\application.cpp">
+      <Filter>MantaRay\Application</Filter>
+    </ClCompile>
+    <ClCompile Include="src\graphics\debug.cpp">
       <Filter>MantaRay\Graphics</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\application\application.h">
-      <Filter>MantaRay\Application</Filter>
-    </ClInclude>
     <ClInclude Include="src\application\window.h">
       <Filter>MantaRay\Application</Filter>
     </ClInclude>
-    <ClInclude Include="src\application\renderer.h">
+    <ClInclude Include="src\graphics\renderer.h">
       <Filter>MantaRay\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\graphics\debug.h">
+      <Filter>MantaRay\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\application\application.h">
+      <Filter>MantaRay\Application</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
