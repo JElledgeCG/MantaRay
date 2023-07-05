@@ -11,7 +11,7 @@ void Renderer::init() {
 // init stuff to fix this. In the future I'd like to structure a bit better to avoid stuff like this but where I'm at right now
 // I don't have the best fix, so this will do. - JE 7/1/23
 void Renderer::setupPipeline() {
-    
+    device.init(&instance, &surface);
 }
 
 // Create a vulkan instance
@@ -69,6 +69,8 @@ void Renderer::setupDebugMessenger() {
 }
 
 void Renderer::cleanupRenderer() {
+
+    device.cleanupDevice();
 
     if (enableValidationLayers) {
         DestroyDebugUtilsMessengerEXT(instance, debugMessenger, nullptr);

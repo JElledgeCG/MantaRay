@@ -2,6 +2,7 @@
 #define RENDERER_H
 
 #include "debug.h"
+#include "device.h"
 
 class Renderer {
 private:
@@ -13,6 +14,8 @@ public:
 
 	VkInstance instance;
 	VkSurfaceKHR surface;
+
+	Device device;
 
 	void init();
 	void setupPipeline();

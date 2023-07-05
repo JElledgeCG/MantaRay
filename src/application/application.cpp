@@ -20,6 +20,8 @@ void RenderApplication::run() {
 	window.init(config);
 	// Initialize graphics engine/vulkan
 	renderer.init();
+	createSurface();
+	renderer.setupPipeline();
 
 	createSurface();
 
@@ -36,6 +38,6 @@ void RenderApplication::mainLoop() {
 }
 
 void RenderApplication::cleanupApplication() {
-	window.windowCleanup();
 	renderer.cleanupRenderer();
+	window.windowCleanup();
 }
